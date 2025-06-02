@@ -48,8 +48,17 @@ test:
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
+# production:
+#   <<: *default
+#   database: my_api_app_production
+#   username: my_api_app
+#   password: <%= ENV["MY_API_APP_DATABASE_PASSWORD"] %>
 production:
-  <<: *default
+  adapter: mysql2
+  encoding: utf8mb4
   database: my_api_app_production
-  username: my_api_app
-  password: <%= ENV["MY_API_APP_DATABASE_PASSWORD"] %>
+  username: deploy
+  password: MyApp@123
+  host: localhost
+
+
