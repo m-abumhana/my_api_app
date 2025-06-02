@@ -6,7 +6,7 @@ set :repo_url, "git@github.com:m-abumhana/my_api_app.git"
 
 append :linked_files, "config/master.key", "config/database.yml"
 append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets"
-
+set :branch, 'main'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
