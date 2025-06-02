@@ -38,7 +38,6 @@ set :ssh_options, {
   forward_agent: true,
   auth_methods: %w(publickey)
 }
-set :deploy_to, "/home/ec2-user/my_api_app"
 # Custom SSH Options
 # ==================
 # You may pass any option but keep in mind that net/ssh understands a
